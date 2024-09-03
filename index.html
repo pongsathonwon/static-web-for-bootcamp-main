@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>photo gallery</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="accent header-title flex-middle">
+        web depvelopment <br />bootcamp
+      </h1>
+      <p class="accent header-subtitle flex-middle">my photo gallery</p>
+    </header>
+    <section class="feature">
+      <p class="divider">feature</p>
+      <div class="card">
+        <img
+          src="./assets//features/image-bootcamp-feature-1.png"
+          alt=""
+          class="card-img"
+        />
+        <div class="card-content">
+          <h3>city skyline</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            quae alias atque deleniti, neque aperiam iure quam quos nam incidunt
+            eveniet eum libero ipsum modi temporibus velit provident corporis
+            sint!
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="./assets//features/image-bootcamp-feature-2.png"
+          alt=""
+          class="card-img"
+        />
+        <div class="card-content">
+          <h3>city skyline</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            quae alias atque deleniti, neque aperiam iure quam quos nam incidunt
+            eveniet eum libero ipsum modi temporibus velit provident corporis
+            sint!
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="./assets//features/image-bootcamp-feature-1.png"
+          alt=""
+          class="card-img"
+        />
+        <div class="card-content">
+          <h3>city skyline</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            quae alias atque deleniti, neque aperiam iure quam quos nam incidunt
+            eveniet eum libero ipsum modi temporibus velit provident corporis
+            sint!
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="./assets//features/image-bootcamp-feature-2.png"
+          alt=""
+          class="card-img"
+        />
+        <div class="card-content">
+          <h3>city skyline</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            quae alias atque deleniti, neque aperiam iure quam quos nam incidunt
+            eveniet eum libero ipsum modi temporibus velit provident corporis
+            sint!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="work">
+      <p class="divider">my work</p>
+      <div class="grid-photo">
+        <img src="./assets/grid/image-bootcamp-1.png" alt="img-1" />
+        <img src="./assets/grid/image-bootcamp-2.png" alt="img-2" />
+        <img src="./assets/grid/image-bootcamp-3.png" alt="img-3" />
+        <img src="./assets/grid/image-bootcamp-4.png" alt="img-3" />
+        <img src="./assets/grid/image-bootcamp-5.png" alt="img-4" />
+        <img src="./assets/grid/image-bootcamp-6.png" alt="img-5" />
+      </div>
+    </section>
+    <section class="slider">
+      <p class="divider">more photo</p>
+      <div class="slider-content">
+        <img
+          src="./assets/slider/slide1.jpg"
+          alt=""
+          class="slider-img show"
+          id="i-0"
+        />
+        <img
+          src="./assets/slider/slide2.jpg"
+          alt=""
+          class="slider-img"
+          id="i-1"
+        />
+        <img
+          src="./assets/slider/slide3.jpg"
+          alt=""
+          class="slider-img"
+          id="i-2"
+        />
+        <img
+          src="./assets/slider/slide4.jpg"
+          alt=""
+          class="slider-img"
+          id="i-3"
+        />
+      </div>
+      <div class="pointer-wrapper">
+        <button class="pointer active" id="p-0"></button>
+        <button class="pointer" id="p-1"></button>
+        <button class="pointer" id="p-2"></button>
+        <button class="pointer" id="p-3"></button>
+      </div>
+      <div class="pointer-wrapper slider-arrow">
+        <button class="arrow-btn"><</button>
+        <button class="arrow-btn">></button>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="block">
+          <h3 class="block-title">john doe</h3>
+          <p class="block-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
+            itaque, ipsa excepturi dicta nostrum porro assumenda ipsum aut
+            corporis nobis molestiae. Libero porro quasi quas maxime hic atque
+            placeat voluptatem?
+          </p>
+
+          <input class="block-input" type="email" placeholder="enter enail" />
+          <button class="block-btn" id="sub">
+            subตะไคร้
+            <i class="fa-solid fa-arrow-right" id="arrow"></i>
+          </button>
+        </div>
+        <div class="block">
+          <h3 class="block-title">john doe</h3>
+          <p class="block-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
+            itaque, ipsa excepturi dicta nostrum porro assumenda ipsum aut
+            corporis nobis molestiae. Libero porro quasi quas maxime hic atque
+            placeat voluptatem?
+          </p>
+          <p class="block-content">email: john@doe.com</p>
+          <div class="social-icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+          </div>
+        </div>
+      </div>
+      <p class="divider no-content"></p>
+      <h3 class="copyright">copyright @ 2024</h3>
+    </footer>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/2fd76ace50.js"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    const imgLst = document.querySelectorAll(".slider-img");
+    const pointerLst = document.querySelectorAll(".pointer");
+    const arrowLst = document.querySelectorAll(".arrow-btn");
+    let curIdx = 0;
+    const n = imgLst.length;
+    pointerLst.forEach((p, idx) =>
+      p.addEventListener("click", () => handleImgChange(curIdx, idx))
+    );
+    arrowLst.forEach((p, idx) =>
+      p.addEventListener(
+        "click",
+        idx === 0
+          ? () => handleImgChange(curIdx, curIdx - 1)
+          : () => handleImgChange(curIdx, curIdx + 1)
+      )
+    );
+    const handleImgChange = (prev, next) => {
+      if (next > n - 1) next = 0;
+      if (next < 0) next = n - 1;
+      changeSlide(prev, next);
+      curIdx = next;
+    };
+    const changeSlide = (prev, next) => {
+      pointerLst[prev].classList.toggle("active");
+      imgLst[prev].classList.toggle("show");
+      pointerLst[next].classList.toggle("active");
+      imgLst[next].classList.toggle("show");
+    };
+  </script>
+  <script>
+    const text = document.querySelector("input.block-input");
+    let email = "";
+    text.addEventListener("input", (e) => (email = e.target.value));
+    const btn = document.getElementById("sub");
+    btn.addEventListener("click", () => {
+      alert(email);
+      text.value = "";
+    });
+  </script>
+</html>
